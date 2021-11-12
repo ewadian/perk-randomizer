@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <title>Perk Roulette</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/logo.jpg" alt="" class="logo">
+        <h1>Perk thingy</h1>
+        <img src="./assets/navbar.png" alt="menu" class="navbar">
+    </header>
+    <main>
+        <h2>It's gonna do things</h2>
+        <div class="perk-grid">
+            <img src="./assets/aceinthehole.png" id="perk-1-slot">
+            <img src="./assets/aceinthehole.png" id="perk-2-slot">
+            <img src="./assets/aceinthehole.png" id="perk-3-slot">
+            <img src="./assets/aceinthehole.png" id="perk-4-slot">
+        </div>
+        <section id="exclusions-container">
+            <label for="exclude-exhaust">
+                <input type="checkbox" id="exhaust-check" name="exhaustion">
+                Exclude Exhaustion
+            </label>
+            <label for="exclude-healing">
+                <input type="checkbox" id="healing-check" name="healing">
+                Exclude Healing
+            </label>
+            <label for="exclude-chance">
+                <input type="checkbox" id="chance-check" name="chance">
+                Exclude Second Chance
+            </label>
+            <label for="exclude-loot">
+                <input type="checkbox" id="loot-check" name="loot">
+                Exclude Loot
+            </label>
+        </section>
+        <button id="roll-btn">Roll</button>
+        <section id="win-loss-container" class="hidden">
+            <label class="win-loss hidden" id="escaped-label">
+                <input name="winOrLoss" type="radio" id="win">
+                <p>Escaped</p>
+            </label>
+            <label class="win-loss hidden" id="sacrificed-label">
+                <input name="winOrLoss" type="radio" id="loss">
+                <p>Sacrificed</p>
+            </label>
+        </section>
+        <button id="re-roll-btn" class="hidden">Roll</button>
+    </main>
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>
